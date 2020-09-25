@@ -1,10 +1,10 @@
 # GTM-tracking-pixel-event
 Goggle tag manager template 
 
-##Decscription
+## Decscription
 This template read data from Opinary cookie sends a tracking pixel eventy. 
 
-##How to use
+## How to use
 Trigger this template at the moment that tracking pixel should be fired.
 
 This template requires initialization of "Opinary-TP-init".
