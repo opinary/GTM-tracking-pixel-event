@@ -9,7 +9,7 @@ Trigger this template at the moment that tracking pixel should be fired.
 
 This template requires initialization of "Opinary-TP-init".
 
-##Developer notes:
+## Developer notes:
 GTM template guideline: https://developers.google.com/tag-manager/templates
 
 Link to submit a template: https://tagmanager.google.com/gallery/getting-started
