@@ -43,21 +43,21 @@ const getUrl = require('getUrl');
 const getTimestamp = require('getTimestamp');
 
 const opinaryTP = getCookie('opinaryTP');
-const decoded = opinaryTP ? fromBase64(decodeUri(opinaryTP.toString())) : '';
-const params = decoded ? JSON.parse(decoded) : {};
 
-const timestamp = getTimestamp();
-const path = getUrl();
-const journeyId = params.journeyId || null;
-const campaignId = params.campaignId || null;
-const publicUserId = params.publicUserId || null;
+if(opinaryTP) {
+  const decoded = opinaryTP ? fromBase64(decodeUri(opinaryTP.toString())) : '';
+  const params = decoded ? JSON.parse(decoded) : {};
 
-const query='journeyId='+journeyId +'&campaignId='+campaignId+'&publicUserId='+publicUserId+'&timestamp='+timestamp+'&path='+encodeUri(path);
+  const timestamp = getTimestamp();
+  const path = getUrl();
+  const journeyId = params.journeyId || null;
+  const campaignId = params.campaignId || null;
+  const publicUserId = params.publicUserId || null;
 
+  const query='journeyId='+journeyId +'&campaignId='+campaignId+'&publicUserId='+publicUserId+'&timestamp='+timestamp+'&path='+encodeUri(path);
 
-/// Prod: sendPixel('https://api.opinary.com/v1/event/conversion?'+query);
-sendPixel('https://opinary-dev.appspot.com/v1/event/conversion?'+query);
-
+  sendPixel('https://opinary-dev.appspot.com/v1/event/conversion?'+query);
+ }
 data.gtmOnSuccess();
 
 
@@ -153,6 +153,6 @@ scenarios: []
 
 ___NOTES___
 
-Created on 9/25/2020, 3:12:16 PM
+Created on 10/28/2020, 1:07:01 PM
 
 
