@@ -1,5 +1,5 @@
 homepage: "https://opinary.com"
 documentation: "https://opinary.com"
 versions:
-  - sha: 38ccf76f12427038687fbb2afed1a2f504b99e34
-    changeNotes: Template file rename.
+  - sha: 45e6b06c1dbcf81560329aa4bda332aeb4b2f777
+    changeNotes: Condition to send event.
