@@ -1,5 +1,5 @@
 homepage: "https://opinary.com"
 documentation: "https://opinary.com"
 versions:
-  - sha: 45e6b06c1dbcf81560329aa4bda332aeb4b2f777
-    changeNotes: Condition to send event.
+  - sha: d0addc39f9498d485948efdb015f0c7df72455ef
+    changeNotes: Update event url.
