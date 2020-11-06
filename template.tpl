@@ -56,7 +56,7 @@ if(opinaryTP) {
 
   const query='journeyId='+journeyId +'&campaignId='+campaignId+'&publicUserId='+publicUserId+'&timestamp='+timestamp+'&path='+encodeUri(path);
 
-  sendPixel('https://opinary-dev.appspot.com/v1/event/conversion?'+query);
+  sendPixel('https://api.opinary.com/v1/event/conversion?'+query);
  }
 data.gtmOnSuccess();
 
